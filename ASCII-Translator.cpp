@@ -6,16 +6,12 @@ int main() {
 	using std::endl;
 
 	cout << "ASCII Translator" << endl;
-	cout << "Input text, and I'll convert it to numbers!" << endl;
+	cout << "Input a character, and I'll print out its ASCII value!" << endl;
 
-	std::string wrongTypeUserInput;
-	cin >> wrongTypeUserInput;
-	const char* userInput = wrongTypeUserInput.c_str();
+	char input;
+	cin >> input;
 
-	for(int i=0; i<wrongTypeUserInput.size(); ++i) {
-		cout << static_cast<int>(userInput[i]) << endl;
-	}
-	cout << userInput << endl;
+	cout << static_cast<int>(input) << endl;
 
 	return 0;
 }
